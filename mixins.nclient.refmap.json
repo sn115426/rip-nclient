@@ -1,0 +1,217 @@
+{
+  "mappings": {
+    "com/ngames/nclient/mixin/MixinEntityPig": {
+      "canBeSteered": "Lnet/minecraft/entity/passive/EntityPig;func_82171_bF()Z",
+      "getSaddled": "Lnet/minecraft/entity/passive/EntityPig;func_70901_n()Z"
+    },
+    "com/ngames/nclient/mixin/MixinCPacketInput": {
+      "writePacketData": "Lnet/minecraft/network/play/client/CPacketInput;func_148840_b(Lnet/minecraft/network/PacketBuffer;)V"
+    },
+    "com/ngames/nclient/mixin/MixinEntityLlama": {
+      "canBeSteered": "Lnet/minecraft/entity/passive/EntityLlama;func_82171_bF()Z"
+    },
+    "com/ngames/nclient/mixin/MixinGuiMainMenu": {
+      "rotateAndBlurSkybox": "Lnet/minecraft/client/gui/GuiMainMenu;func_73968_a()V"
+    },
+    "com/ngames/nclient/mixin/MixinSPacketPlayerPosLook": {
+      "readPacketData": "Lnet/minecraft/network/play/server/SPacketPlayerPosLook;func_148837_a(Lnet/minecraft/network/PacketBuffer;)V"
+    },
+    "com/ngames/nclient/mixin/MixinAbstractHorse": {
+      "isHorseSaddled": "Lnet/minecraft/entity/passive/AbstractHorse;func_110257_ck()Z",
+      "canBeSteered": "Lnet/minecraft/entity/passive/AbstractHorse;func_82171_bF()Z"
+    },
+    "com/ngames/nclient/mixin/MixinModifiableAttributeInstance": {
+      "removeModifier": "Lnet/minecraft/entity/ai/attributes/ModifiableAttributeInstance;func_111124_b(Lnet/minecraft/entity/ai/attributes/AttributeModifier;)V",
+      "applyModifier": "Lnet/minecraft/entity/ai/attributes/ModifiableAttributeInstance;func_111121_a(Lnet/minecraft/entity/ai/attributes/AttributeModifier;)V"
+    },
+    "com/ngames/nclient/mixin/MixinEntityPlayerSP": {
+      "onLivingUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70636_d()V",
+      "isSneaking": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70093_af()Z",
+      "swingArm": "Lnet/minecraft/client/entity/EntityPlayerSP;func_184609_a(Lnet/minecraft/util/EnumHand;)V",
+      "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V",
+      "removeActivePotionEffect": "Lnet/minecraft/client/entity/EntityPlayerSP;func_184596_c(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;",
+      "onUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70071_h_()V"
+    },
+    "com/ngames/nclient/mixin/MixinCPacketPositionRotation": {
+      "writePacketData": "Lnet/minecraft/network/play/client/CPacketPlayer$PositionRotation;func_148840_b(Lnet/minecraft/network/PacketBuffer;)V"
+    },
+    "com/ngames/nclient/mixin/MixinCPacketPlayerRotation": {
+      "writePacketData": "Lnet/minecraft/network/play/client/CPacketPlayer$Rotation;func_148840_b(Lnet/minecraft/network/PacketBuffer;)V"
+    },
+    "com/ngames/nclient/mixin/MixinEntityLivingBase": {
+      "getJumpUpwardsMotion": "Lnet/minecraft/entity/EntityLivingBase;func_175134_bD()F",
+      "jump": "Lnet/minecraft/entity/EntityLivingBase;func_70664_aZ()V"
+    },
+    "com/ngames/nclient/mixin/MixinMinecraft": {
+      "runTickKeyboard": "Lnet/minecraft/client/Minecraft;func_184118_az()V"
+    },
+    "com/ngames/nclient/mixin/MixinNetworkManager": {
+      "sendPacket": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V"
+    },
+    "com/ngames/nclient/mixin/MixinSPacketDestroyEntities": {
+      "processPacket": "Lnet/minecraft/network/play/server/SPacketDestroyEntities;func_148833_a(Lnet/minecraft/network/play/INetHandlerPlayClient;)V"
+    },
+    "com/ngames/nclient/mixin/MixinGuiNewChat": {
+      "addToSentMessages": "Lnet/minecraft/client/gui/GuiNewChat;func_146239_a(Ljava/lang/String;)V"
+    },
+    "com/ngames/nclient/mixin/MixinPlayerControllerMP": {
+      "getBlockReachDistance": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78757_d()F",
+      "extendedReach": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78749_i()Z",
+      "windowClick": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_187098_a(IIILnet/minecraft/inventory/ClickType;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;",
+      "attackEntity": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78764_a(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/entity/Entity;)V"
+    },
+    "com/ngames/nclient/mixin/SPacketUpdateHealthMixin": {
+      "processPacket": "Lnet/minecraft/network/play/server/SPacketUpdateHealth;func_148833_a(Lnet/minecraft/network/play/INetHandlerPlayClient;)V"
+    },
+    "com/ngames/nclient/mixin/MixinFoodStats": {
+      "setFoodLevel": "Lnet/minecraft/util/FoodStats;func_75114_a(I)V"
+    },
+    "com/ngames/nclient/mixin/MixinSPacketEntityVelocity": {
+      "readPacketData": "Lnet/minecraft/network/play/server/SPacketEntityVelocity;func_148837_a(Lnet/minecraft/network/PacketBuffer;)V"
+    }
+  },
+  "data": {
+    "notch": {
+      "com/ngames/nclient/mixin/MixinEntityPig": {
+        "canBeSteered": "Laab;cV()Z",
+        "getSaddled": "Laab;dl()Z"
+      },
+      "com/ngames/nclient/mixin/MixinCPacketInput": {
+        "writePacketData": "Llq;b(Lgy;)V"
+      },
+      "com/ngames/nclient/mixin/MixinEntityLlama": {
+        "canBeSteered": "Laaq;cV()Z"
+      },
+      "com/ngames/nclient/mixin/MixinGuiMainMenu": {
+        "rotateAndBlurSkybox": "Lblp;g()V"
+      },
+      "com/ngames/nclient/mixin/MixinSPacketPlayerPosLook": {
+        "readPacketData": "Ljp;a(Lgy;)V"
+      },
+      "com/ngames/nclient/mixin/MixinAbstractHorse": {
+        "isHorseSaddled": "Laam;dG()Z",
+        "canBeSteered": "Laam;cV()Z"
+      },
+      "com/ngames/nclient/mixin/MixinModifiableAttributeInstance": {
+        "removeModifier": "Lwf;c(Lwc;)V",
+        "applyModifier": "Lwf;b(Lwc;)V"
+      },
+      "com/ngames/nclient/mixin/MixinEntityPlayerSP": {
+        "onLivingUpdate": "Lbub;n()V",
+        "isSneaking": "Lbub;aU()Z",
+        "swingArm": "Lbub;a(Ltz;)V",
+        "onUpdateWalkingPlayer": "Lbub;N()V",
+        "removeActivePotionEffect": "Lbub;c(Lux;)Luy;",
+        "onUpdate": "Lbub;B_()V"
+      },
+      "com/ngames/nclient/mixin/MixinCPacketPositionRotation": {
+        "writePacketData": "Llk$b;b(Lgy;)V"
+      },
+      "com/ngames/nclient/mixin/MixinCPacketPlayerRotation": {
+        "writePacketData": "Llk$c;b(Lgy;)V"
+      },
+      "com/ngames/nclient/mixin/MixinEntityLivingBase": {
+        "getJumpUpwardsMotion": "Lvn;ct()F",
+        "jump": "Lvn;cu()V"
+      },
+      "com/ngames/nclient/mixin/MixinMinecraft": {
+        "runTickKeyboard": "Lbhz;aD()V"
+      },
+      "com/ngames/nclient/mixin/MixinNetworkManager": {
+        "sendPacket": "Lgw;a(Lht;)V"
+      },
+      "com/ngames/nclient/mixin/MixinSPacketDestroyEntities": {
+        "processPacket": "Ljs;a(Lhw;)V"
+      },
+      "com/ngames/nclient/mixin/MixinGuiNewChat": {
+        "addToSentMessages": "Lbiz;a(Ljava/lang/String;)V"
+      },
+      "com/ngames/nclient/mixin/MixinPlayerControllerMP": {
+        "getBlockReachDistance": "Lbry;d()F",
+        "extendedReach": "Lbry;i()Z",
+        "windowClick": "Lbry;a(IIILafu;Laeb;)Lain;",
+        "attackEntity": "Lbry;a(Laeb;Lve;)V"
+      },
+      "com/ngames/nclient/mixin/SPacketUpdateHealthMixin": {
+        "processPacket": "Lkh;a(Lhw;)V"
+      },
+      "com/ngames/nclient/mixin/MixinFoodStats": {
+        "setFoodLevel": "Lafn;a(I)V"
+      },
+      "com/ngames/nclient/mixin/MixinSPacketEntityVelocity": {
+        "readPacketData": "Lke;a(Lgy;)V"
+      }
+    },
+    "searge": {
+      "com/ngames/nclient/mixin/MixinEntityPig": {
+        "canBeSteered": "Lnet/minecraft/entity/passive/EntityPig;func_82171_bF()Z",
+        "getSaddled": "Lnet/minecraft/entity/passive/EntityPig;func_70901_n()Z"
+      },
+      "com/ngames/nclient/mixin/MixinCPacketInput": {
+        "writePacketData": "Lnet/minecraft/network/play/client/CPacketInput;func_148840_b(Lnet/minecraft/network/PacketBuffer;)V"
+      },
+      "com/ngames/nclient/mixin/MixinEntityLlama": {
+        "canBeSteered": "Lnet/minecraft/entity/passive/EntityLlama;func_82171_bF()Z"
+      },
+      "com/ngames/nclient/mixin/MixinGuiMainMenu": {
+        "rotateAndBlurSkybox": "Lnet/minecraft/client/gui/GuiMainMenu;func_73968_a()V"
+      },
+      "com/ngames/nclient/mixin/MixinSPacketPlayerPosLook": {
+        "readPacketData": "Lnet/minecraft/network/play/server/SPacketPlayerPosLook;func_148837_a(Lnet/minecraft/network/PacketBuffer;)V"
+      },
+      "com/ngames/nclient/mixin/MixinAbstractHorse": {
+        "isHorseSaddled": "Lnet/minecraft/entity/passive/AbstractHorse;func_110257_ck()Z",
+        "canBeSteered": "Lnet/minecraft/entity/passive/AbstractHorse;func_82171_bF()Z"
+      },
+      "com/ngames/nclient/mixin/MixinModifiableAttributeInstance": {
+        "removeModifier": "Lnet/minecraft/entity/ai/attributes/ModifiableAttributeInstance;func_111124_b(Lnet/minecraft/entity/ai/attributes/AttributeModifier;)V",
+        "applyModifier": "Lnet/minecraft/entity/ai/attributes/ModifiableAttributeInstance;func_111121_a(Lnet/minecraft/entity/ai/attributes/AttributeModifier;)V"
+      },
+      "com/ngames/nclient/mixin/MixinEntityPlayerSP": {
+        "onLivingUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70636_d()V",
+        "isSneaking": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70093_af()Z",
+        "swingArm": "Lnet/minecraft/client/entity/EntityPlayerSP;func_184609_a(Lnet/minecraft/util/EnumHand;)V",
+        "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V",
+        "removeActivePotionEffect": "Lnet/minecraft/client/entity/EntityPlayerSP;func_184596_c(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;",
+        "onUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70071_h_()V"
+      },
+      "com/ngames/nclient/mixin/MixinCPacketPositionRotation": {
+        "writePacketData": "Lnet/minecraft/network/play/client/CPacketPlayer$PositionRotation;func_148840_b(Lnet/minecraft/network/PacketBuffer;)V"
+      },
+      "com/ngames/nclient/mixin/MixinCPacketPlayerRotation": {
+        "writePacketData": "Lnet/minecraft/network/play/client/CPacketPlayer$Rotation;func_148840_b(Lnet/minecraft/network/PacketBuffer;)V"
+      },
+      "com/ngames/nclient/mixin/MixinEntityLivingBase": {
+        "getJumpUpwardsMotion": "Lnet/minecraft/entity/EntityLivingBase;func_175134_bD()F",
+        "jump": "Lnet/minecraft/entity/EntityLivingBase;func_70664_aZ()V"
+      },
+      "com/ngames/nclient/mixin/MixinMinecraft": {
+        "runTickKeyboard": "Lnet/minecraft/client/Minecraft;func_184118_az()V"
+      },
+      "com/ngames/nclient/mixin/MixinNetworkManager": {
+        "sendPacket": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V"
+      },
+      "com/ngames/nclient/mixin/MixinSPacketDestroyEntities": {
+        "processPacket": "Lnet/minecraft/network/play/server/SPacketDestroyEntities;func_148833_a(Lnet/minecraft/network/play/INetHandlerPlayClient;)V"
+      },
+      "com/ngames/nclient/mixin/MixinGuiNewChat": {
+        "addToSentMessages": "Lnet/minecraft/client/gui/GuiNewChat;func_146239_a(Ljava/lang/String;)V"
+      },
+      "com/ngames/nclient/mixin/MixinPlayerControllerMP": {
+        "getBlockReachDistance": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78757_d()F",
+        "extendedReach": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78749_i()Z",
+        "windowClick": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_187098_a(IIILnet/minecraft/inventory/ClickType;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;",
+        "attackEntity": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78764_a(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/entity/Entity;)V"
+      },
+      "com/ngames/nclient/mixin/SPacketUpdateHealthMixin": {
+        "processPacket": "Lnet/minecraft/network/play/server/SPacketUpdateHealth;func_148833_a(Lnet/minecraft/network/play/INetHandlerPlayClient;)V"
+      },
+      "com/ngames/nclient/mixin/MixinFoodStats": {
+        "setFoodLevel": "Lnet/minecraft/util/FoodStats;func_75114_a(I)V"
+      },
+      "com/ngames/nclient/mixin/MixinSPacketEntityVelocity": {
+        "readPacketData": "Lnet/minecraft/network/play/server/SPacketEntityVelocity;func_148837_a(Lnet/minecraft/network/PacketBuffer;)V"
+      }
+    }
+  }
+}
